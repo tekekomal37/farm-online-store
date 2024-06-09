@@ -1,0 +1,105 @@
+/* Google Font Family  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@300..700&display=swap');
+
+/*  For Reference
+   font-family: "Signika", sans-serif;
+   font-family: "Poppins", sans-serif;
+ */
+
+ /* Icon Library - Get Bootstrap  */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+ /* Universal Selector */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+ }
+
+ /* header section */
+ /* Header Section */
+ #header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background-color: rgb(27, 72, 73);
+    color: whitesmoke;
+    padding: 10px;
+ }
+
+ #header h2{
+    padding-left: 3dvw;
+ }
+ #header #cart{
+    padding-right: 3dvw;
+    font-size: xx-large;
+    /* color: teal; */
+    font-weight: bold;
+ }
+ .logo{
+   width: 50px;
+ }
+
+ /* Navigation Section */
+ nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   
+   padding-right: 50px;
+   /* padding: 20px; */
+   /* word-spacing: 3dvw; */
+ }
+ nav ul li{
+padding: 10px;
+font-size: larger;
+ }
+ nav ul li a{
+   text-decoration: none;
+   color:rgb(27, 72, 73) ;
+ }
+
+ /* service section */
+
+ #services{
+   margin: 40px;
+   display: flex;
+   flex-direction: row;
+   /* flex-wrap: wrap; */
+   margin: 10px 180px;
+  
+   /* padding: 70px; */
+ }
+
+ #services .box{
+   border: 1px solid black;
+   padding: 18px;
+   margin: 3px 10px;
+   border-radius: 20px;
+   /* background: rgb(255, 250, 250); */
+ }
+ #services .box img{
+   height: 140px;
+   margin: auto;
+   display: block;
+ }
+ #services .box p{
+   font-family: 'Bree Serif', serif;
+   text-align: center;
+ }
+.card,i{
+  background-color: rgb(10, 44, 44);
+  color: white;
+  border-radius: 5px;
+  padding: 7px;
+  /* margin: 10px; */
+  /* justify-content: space-around; */
+  
+}
+.menu{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
