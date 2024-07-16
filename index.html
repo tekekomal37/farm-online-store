@@ -3,114 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Veggies</title>
+    <title>KT Farm Veggies</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/favicongk.png" type="image/x-icon">
     <!-- External style Sheet -->
     <link rel="stylesheet" href="style.css">
+     <!-- CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
 <body>
     <!-- Header Section -->
     <header id="header">
-        <!-- <img class="logo" src="assets/favicon.png" alt=""> -->
-        <h2>GK Farm Veggies</h2>
-        <i class="bi bi-cart4" id="cart" ></i>
+        <h2>KT Farm Veggies</h2>
+        <i class="bi bi-cart4" id="cart" ></i> 
+        <span id="cart-count" class="cart-count">0</span>
     </header>
 
     <!-- Navigation Section -->
-<nav>
-     <!-- <section> 
-        <img src="assets/logo.jpg" alt="">
-    </section>  -->
-    
-        <ul>
-            <li><a href="#">Home</a></li>
-        <li><a href="#">About</a> </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-    <!-- </section> -->
-</nav>
+    <nav id="nav-section">
+        <img src="assets/logo.jpeg" alt="">
+        <!-- Navigation items -->
+        <section id="nav-items">
+            <ul id="nav-list">
+                <li> <a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </section>
+    </nav>
+
     <!-- Main Section -->
+    <section id="main-section">
+        <section class="product-item">
+            <img src="assets/onion.jfif" alt="">
+            <p><strong>Onion :</strong> Onions contain decent amounts of vitamin C, folate, vitamin B6, and potassium, which provide a number of benefits. </p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-    <section id="services-container">
-        <!-- <h1 class="h-primary center">Our Services</h1> -->
-        <div id="services">
-            <div class="box">
-                <img src="assets/tomato1.jfif" alt="">
-                <h3 class="h-secondary center">Tomato : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi.</p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
+        <section class="product-item">
+            <img src="assets/potato.webp" alt="">
+            <p><strong>Potato :</strong>One medium-sized (5.3oz) skin-on potato has 110 calories, fat 0%, cholesterol 0%, fiber 7%, vitamin C 30%.</p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-                </section>
-            </div>
+        <section class="product-item">
+            <img src="assets/tomato1.jfif" alt="">
+            <p><strong>Tomato :</strong>The fruit, which some consider a vegetable, is also a source of nutrients like vitamin C, potassium, and antioxidants.</p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-            <div class="box">
-                <img src="assets/onion.jfif" alt="">
-                <h3 class="h-secondary center">Onion : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi,ae.</p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
+        <section class="product-item">
+            <img src="assets/carraots.webp" alt="">
+            <p><strong>Carrot :</strong>Carrots have calcium and vitamin K, which are important for bone health. They might help you lose weight.</p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-                </section>
-            </div>
+        <section class="product-item">
+            <img src="assets/brinjal.jpg" alt="">
+            <p><strong>Brinjal :</strong>Brinjal contains niacin, thiamin, vitamin C, riboflavin, choline, vitamin B6, vitamin A, folate.</p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-            <div class="box">
-                <img src="assets/vegetable.jfif" alt="">
-                <h3 class="h-secondary center">Cauliflower : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi, </p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
+        <section class="product-item">
+            <img src="assets/capsicum.jpg" alt="">
+            <p><strong>Capsicum :</strong>Capsicum is rich in Vitamin C, a biologically active phytochemical that can help strengthen the immune system.</p>
+            <section class="product-buttons">
+                <button class="add-to-cart">BUY NOW</button>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart4"></i> 
+            </section>
+        </section>
 
-                </section>
-            </div>
-
-            <!-- <div class="box">
-                <img src="assets/vegetable.jfif" alt="">
-                <h3 class="h-secondary center">Cauliflower : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi, </p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
-
-                </section>
-            </div> -->
-            <!-- <div class="box">
-                <img src="assets/vegetable.jfif" alt="">
-                <h3 class="h-secondary center">Cauliflower : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi, </p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
-
-                </section>
-            </div> -->
-            <!-- <div class="box">
-                <img src="assets/vegetable.jfif" alt="">
-                <h3 class="h-secondary center">Cauliflower : </h3>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente debitis iusto officiis, quasi, </p>
-                <section class="menu">
-                    <button class="card">Buy Now</button>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-cart4" id="cart" ></i>
-
-                </section>
-            </div> -->
-            
-        </div>
     </section>
 
     <!-- Chat Section -->
-    
+
     <!-- Footer Section -->
+    <footer>
+        <p><b>Follow us On :</b> &nbsp;  &nbsp; &nbsp; 
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+  
+        <a href="https://www.linkedin.com/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+  
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+  
+        
+      </footer>
+      <section class="copy">
+        <!-- Copy write section -->
+        Copyright &copy;2024 KT Technology Video Communications, Inc. All rights reserved.
+      </section>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let cartCount = 0;
+            const cartCountElement = document.getElementById('cart-count');
+            const addToCartButtons = document.querySelectorAll('.bi-cart4');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartCount++;
+                    cartCountElement.textContent = cartCount;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
