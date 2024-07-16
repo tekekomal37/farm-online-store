@@ -9,6 +9,13 @@
  /* Icon Library - Get Bootstrap  */
  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* CSS Variables */
+ :root{
+   --bg-color-main:#1C4040;
+   --white-color: #F4F4F1;
+   --font-family-main-heading:"Signika", sans-serif;
+   --font-family-content:"Poppins", sans-serif;
+ }
  /* Universal Selector */
  *{
     padding: 0;
@@ -17,89 +24,124 @@
     list-style-type: none;
  }
 
- /* header section */
  /* Header Section */
- #header{
+#header{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
-    background-color: rgb(27, 72, 73);
-    color: whitesmoke;
-    padding: 10px;
- }
+    background-color:var(--bg-color-main);
+    color: #F4F4F1;
+    font-family: var(--font-family-main-heading);
+    padding: 10px 0px;
+}
 
- #header h2{
+#header h2{
     padding-left: 3dvw;
- }
- #header #cart{
+    letter-spacing: 2px;
+}
+#header #cart{
     padding-right: 3dvw;
     font-size: xx-large;
-    /* color: teal; */
+    color: #F4F4F1;
     font-weight: bold;
- }
- .logo{
-   width: 50px;
- }
-
- /* Navigation Section */
- nav ul{
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   
-   padding-right: 50px;
-   /* padding: 20px; */
-   /* word-spacing: 3dvw; */
- }
- nav ul li{
-padding: 10px;
-font-size: larger;
- }
- nav ul li a{
-   text-decoration: none;
-   color:rgb(27, 72, 73) ;
- }
-
- /* service section */
-
- #services{
-   margin: 40px;
-   display: flex;
-   flex-direction: row;
-   /* flex-wrap: wrap; */
-   margin: 10px 180px;
-  
-   /* padding: 70px; */
- }
-
- #services .box{
-   border: 1px solid black;
-   padding: 18px;
-   margin: 3px 10px;
-   border-radius: 20px;
-   /* background: rgb(255, 250, 250); */
- }
- #services .box img{
-   height: 140px;
-   margin: auto;
-   display: block;
- }
- #services .box p{
-   font-family: 'Bree Serif', serif;
-   text-align: center;
- }
-.card,i{
-  background-color: rgb(10, 44, 44);
-  color: white;
-  border-radius: 5px;
-  padding: 7px;
-  /* margin: 10px; */
-  /* justify-content: space-around; */
-  
 }
-.menu{
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
+
+/* Navigation Section */
+#nav-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#nav-section img{
+   width: 80px;
+   padding-left: 1dvw;
+}
+
+#nav-list{
+   display: flex; 
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 4dvw;
+   font-family: var(--font-family-main-heading);
+   font-size: larger;
+   padding-right: 1dvw;
+}
+#nav-list li a{
+   text-decoration: none;
+   color: var(--bg-color-main);
+}
+
+/* Main Section */
+#main-section{
+   width: 1000px;
+   margin: 20px auto;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   row-gap: 10px;
+}
+
+.product-item{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 300px;
+   border: 1px solid gray;
+   border-radius: 15px;
+}
+.product-item img{
+   width: 100%;
+   height: 280px;
+   border-radius: 15px;
+   padding: 5px; 
+}
+.product-item p{
+   padding: 5px;
+   font-family: var(--font-family-content);
+}
+.product-buttons{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   padding-left: 7px;
+   padding-right: 7px;
+}
+.product-buttons button{
+   font-family: var(--font-family-main-heading);
+   padding: 3px 15px;
+   background-color: var(--bg-color-main);
+   color: var(--white-color);
+   border-radius: 10px;
+}
+.product-buttons i{
+   font-size: large;
+   background-color: var(--bg-color-main);
+   padding: 5px 10px;
+   border-radius: 10px;
+   color: var(--white-color);
+}
+
+.cart-count {
+  position: absolute;
+  top: 2px;
+  right: 19px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+ /* footer */
+ .fa {
+  padding: 10px;
+  font-size: 25px;
+
+}
+
+.copy{
+  background-color: var(--bg-color-main);
+  color: whitesmoke;
+  padding: 5px;
+  text-align: center;
 }
